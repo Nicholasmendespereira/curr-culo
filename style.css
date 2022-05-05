@@ -1,0 +1,227 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+body {
+    background-color: black;
+    
+}
+header {
+    margin-top: 2px;
+}
+.nav-header {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 20px;
+    overflow: hidden;
+    border-right: 1px solid rgb(255, 255, 255, 0.75);
+}
+.logo {
+    color: white;
+    margin-top: -20px;
+    font-size: 3em;
+    overflow: hidden;
+}
+    
+.list-links {
+    
+}
+.list-links li {
+    padding-left: 15px;
+    display: inline-block;
+    list-style: none;
+}
+.list-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.animation-header {
+    animation: header-anima 4s  1s normal;
+}
+.animation-cursor {
+    animation: piscar-cursor 500ms  steps(40) infinite normal;
+}
+.anima-body {
+    animation: anima-body 5s 1s normal;
+}
+@keyframes header-anima {
+    from {
+        height: 0;
+        width: 0;
+    }
+    to {
+        height: 109px;
+        width: 100vw;
+    }
+} 
+@keyframes piscar-cursor {
+    from {
+        border-right-color: rgb(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+@keyframes anima-main {
+    from {
+        height: 0;
+        width: 0;
+    }
+    to {
+        height: 100vh;
+        width: 100%; 
+    }
+}
+main {
+    border: 1px solid rgb(255, 255, 255, 0.75);
+    color: white;
+    overflow: hidden;
+    width: 94%;
+    margin: 0 auto;
+}
+section {
+
+}
+.container-flex {
+    margin: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-01 img {
+    
+    margin: auto;
+    position:relative;
+    top: 16%;
+    left: 16%;
+    
+}
+.trilha-01 {
+    margin: 20% 0 0 0;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.trilha-escrita p {
+    font-size: 2em;
+    margin-top: 10%;   
+}
+.linha-tracejada img {
+
+    margin-left: 48%;
+
+}
+.container-flex-trilha02 {
+    margin: auto;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-02 img {
+    
+    margin: auto;
+    position:relative;
+    top: 16%;
+    left: 16%;
+    
+}
+.trilha-02 {
+    margin: 5% 6%;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.trilha-escrita p {
+    font-size: 2em;
+    margin-top: 30%;   
+}
+/* ------------------------------------------------------------- */
+.container-flex-trilha03 {
+    margin: auto;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-03 img {
+    border-radius: 10px;
+    margin: auto;
+    position:relative;
+    top: 16%;
+    left: 16%;
+    
+}
+.trilha-03 {
+    margin: 5% 20% 0 0;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.trilha-escrita-03 p {
+    font-size: 2em;
+    margin: 20% 20% 0 0;
+}
+/* ------------------------------------------------------------- */
+.container-flex-trilha04 {
+    margin: auto;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-04 img {
+    border-radius: 10px;
+    margin: auto;
+    position:relative;
+    top: 16%;
+    left: 16%;
+    
+}
+.trilha-04 {
+    margin: 5% 0 0 ;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.trilha-escrita-04 p {
+    font-size: 2em;
+    margin: 60% 20% 0 0;
+}
+.animation-imgs-trilha {
+    animation: imgs-trilha 4s 1s normal;
+}
+@keyframes imgs-trilha {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+}
+aside {
+
+}
+footer {
+    color: rgb(2, 89, 2);
+    text-align: center;
+    padding: 1em;}
