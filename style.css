@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
 
 * {
     padding: 0px;
@@ -28,8 +30,10 @@ header {
 .logo {
     color: white;
     margin-top: -20px;
-    font-size: 3em;
+    font-size: 2em;
     overflow: hidden;
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: Thin 100 Italic; */
 }
     
 .list-links {
@@ -89,8 +93,47 @@ main {
     width: 94%;
     margin: 0 auto;
 }
-section {
+.container-perfil {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: auto;
 
+}
+.img-perfil img {
+    margin: 18% 0 0 400%;
+    border-radius: 60px;
+    border: 3px solid white;
+}
+.img-perfil h3 {
+    margin: 18% 0 0 400%;
+    text-align: justify;
+}
+.container-perfil p {
+    
+    text-align: justify;
+    padding: 1%;
+    border-radius: 20px;
+    width: 80%;
+    color: black;
+    background-color: white;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+#paragrafo-perfil {
+    display: none;
+}
+#button-minha-história {
+    font-size: 1.2em;
+    margin-left: 45%;
+    cursor: pointer;
+}
+section {
+    margin-top:3%;
+    border-top: 1px dashed white;
 }
 .container-flex {
     margin: auto;
@@ -118,6 +161,12 @@ section {
 .trilha-escrita p {
     font-size: 2em;
     margin-top: 10%;   
+}
+#icone-dev-web {
+    cursor: pointer;
+}
+#paragrafo-dev-web  {
+    display: none;
 }
 .linha-tracejada img {
 
@@ -207,6 +256,39 @@ section {
     font-size: 2em;
     margin: 60% 20% 0 0;
 }
+/* ------------------------------------------------------------- */
+.container-flex-trilha05 {
+    margin: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-05 img {
+    border-radius: 10px;
+    margin: auto;
+    position:relative;
+    top: 16%;
+    left: 16%;
+    
+}
+.trilha-05 {
+    margin: 5% 30% 0 0;
+    background-color: white;
+    width: 20%;
+    height: 70px;
+    border-radius: 50px;
+}
+.trilha-escrita-05  {
+    width: 60%;
+       
+}
+.trilha-escrita-05 p {
+    font-size: 2em;
+       
+}
+/* ------------------------------------------------------------- */
 .animation-imgs-trilha {
     animation: imgs-trilha 4s 1s normal;
 }
@@ -225,3 +307,88 @@ footer {
     color: rgb(2, 89, 2);
     text-align: center;
     padding: 1em;}
+
+@media (max-width: 401px) {
+.container-perfil {
+    display:block;
+    padding: 2%;
+    
+}
+.container-perfil img {
+    display:block;
+    padding: 2%;
+    margin-left: 30%;
+    border-radius: 60%;
+}
+.container-perfil p {
+    text-align: justify;
+    padding: 4%;
+    border-radius: 20px;
+    width: 85vw;
+    color: black;
+    background-color: white;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 8% 2% 2% 2%;
+}
+.container-flex {
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-01 {
+    margin: 20% 0 0 0;
+    background-color: white;
+    width: 25%;
+    height: 70px;
+    border-radius: 50px;
+}
+.container-flex-trilha02 {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-escrita p {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50%;
+}
+.container-flex-trilha03 {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.trilha-escrita-03 p {
+    font-size: 2em;
+    margin: 20% 0 0 0;
+}
+.container-flex-trilha04 {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: auto;
+}
+.trilha-04 {
+    margin: 4% 0 0;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+
+}
